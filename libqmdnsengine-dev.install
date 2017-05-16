@@ -1,0 +1,3 @@
+usr/include/qmdnsengine
+usr/lib/*/libqmdnsengine.so
+usr/lib/*/cmake/qmdnsengine

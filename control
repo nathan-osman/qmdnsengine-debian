@@ -1,0 +1,23 @@
+Source: qmdnsengine
+Section: libs
+Priority: extra
+Maintainer: Nathan Osman <nathan@quickmediasolutions.com>
+Build-Depends: cmake (>= 3.2.0),
+               qtbase5-dev (>= 5.4)
+Standards-Version: 3.9.8
+Homepage: https://github.com/nitroshare/qmdnsengine
+
+Package: libqmdnsengine0
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Multicast DNS library for Qt applications
+ This package contains the shared library required at runtime.
+
+Package: libqmdnsengine-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+         libqmdnsengine0 (= ${binary:Version})
+Description: Multicast DNS library for Qt applications
+ This package contains the files necessary for development.
