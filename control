@@ -3,8 +3,9 @@ Section: libs
 Priority: extra
 Maintainer: Nathan Osman <nathan@quickmediasolutions.com>
 Build-Depends: debhelper (>= 9),
-               cmake (>= 3.2.0),
-               qtbase5-dev (>= 5.4)
+               cmake (>= 3.2),
+               qtbase5-dev (>= 5.4),
+               doxygen
 Standards-Version: 3.9.8
 Homepage: https://github.com/nitroshare/qmdnsengine
 
@@ -20,5 +21,20 @@ Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
          libqmdnsengine0 (= ${binary:Version})
-Description: Multicast DNS library for Qt applications
+Description: Multicast DNS library for Qt applications - development files
  This package contains the files necessary for development.
+
+Package: libqmdnsengine-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Multicast DNS library for Qt applications - documentation
+ This package contains documentation for the library.
+
+Package: libqmdnsengine-examples
+Section: x11
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Multicast DNS library for Qt applications - examples
+ This package contains examples for development.
