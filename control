@@ -14,6 +14,11 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Description: Multicast DNS library for Qt applications
+ QMdnsEngine provides an implementation of multicast DNS as per RFC 6762,
+ enabling Qt applications to provide mDNS services on the local network,
+ respond to mDNS queries from other devices, and browse mDNS services provided
+ by other devices on the local network.
+ .
  This package contains the shared library required at runtime.
 
 Package: libqmdnsengine-dev
@@ -22,6 +27,11 @@ Architecture: any
 Depends: ${misc:Depends},
          libqmdnsengine0 (= ${binary:Version})
 Description: Multicast DNS library for Qt applications - development files
+ QMdnsEngine provides an implementation of multicast DNS as per RFC 6762,
+ enabling Qt applications to provide mDNS services on the local network,
+ respond to mDNS queries from other devices, and browse mDNS services provided
+ by other devices on the local network.
+ .
  This package contains the files necessary for development.
 
 Package: libqmdnsengine-doc
@@ -29,6 +39,11 @@ Section: doc
 Architecture: all
 Depends: ${misc:Depends}
 Description: Multicast DNS library for Qt applications - documentation
+ QMdnsEngine provides an implementation of multicast DNS as per RFC 6762,
+ enabling Qt applications to provide mDNS services on the local network,
+ respond to mDNS queries from other devices, and browse mDNS services provided
+ by other devices on the local network.
+ .
  This package contains documentation for the library.
 
 Package: libqmdnsengine-examples
@@ -37,4 +52,9 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Description: Multicast DNS library for Qt applications - examples
+ QMdnsEngine provides an implementation of multicast DNS as per RFC 6762,
+ enabling Qt applications to provide mDNS services on the local network,
+ respond to mDNS queries from other devices, and browse mDNS services provided
+ by other devices on the local network.
+ .
  This package contains examples for development.
