@@ -1,5 +1,5 @@
 qmdnsengine (0.1.0-1) unstable; urgency=low
 
-  * Initial release
+  * Initial release (Closes: #875270)
 
  -- Nathan Osman <nathan@quickmediasolutions.com>  Thu, 07 Sep 2017 15:49:41 -0700
